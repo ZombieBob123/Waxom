@@ -23,6 +23,7 @@
 	.header {
 	width: 100%;
 	padding-top: 40px;
+	z-index: 2;
 
 	position: absolute;
 	left: 0px;
@@ -30,14 +31,22 @@
 	}
 
 	.block_home {
+	z-index: 1;
+	}
+
+	.container_item {
+	margin: 0 auto;
+	}
+
+	.container_item {
 	display: flex;   
 	flex-direction: column; 
 	justify-content: center;
+	}
 
-	background: url("images/bg_photo_11949.jpg") center no-repeat;
-	width: 100%;
-	height: 120vh;
-	background-size: cover;
+	.content_item {
+	margin: 0 auto;
+	width: 650px;
 	}
 
 	.logo {
@@ -166,19 +175,16 @@
 	position: relative;
 	}
 
+	.none {
+	display: none;
+	}
+
 	.home_container {
 	overflow: hidden;
 	}
 
-	.content_item {
-	max-width: 600px;
-	display: block;
-	margin: 0 auto;
-	}
-
 	.slider_block {
 	display: flex;
-	width: 3450px;
 	position: relative;
 	transition: all .2s;
 	}
@@ -368,7 +374,6 @@
 	.buttons {
 	display: flex;
 	justify-content: center;
-	padding-top: 50px;
 	}
 
 	.button_filter {
@@ -719,6 +724,11 @@
 	margin-top: 85px;
 	}
 
+	.blog_items_inner {
+	display: flex;
+	justify-content: space-between;
+	}
+
 	.blog_item {
 	width: 370px;
 	height: 395px;
@@ -726,8 +736,6 @@
 	border: 1px solid #f8f8f8;
 	position: relative;
 	transition: all .3s;
-
-	margin-left: 10px;
 	}
 
 	.blog_item:hover {
@@ -1061,7 +1069,8 @@
 	}
 
 	.blogs_container {
-	max-width: 1150px;
+	max-width: 1117px;
+	margin: 0 auto;
 	overflow: hidden;
 	}
 
@@ -1073,7 +1082,10 @@
 	height: 1100px;
 	}
 
-
+	.block-2_img {
+	font-size: 40px;
+	text-align: center;
+	}
 
 
 
